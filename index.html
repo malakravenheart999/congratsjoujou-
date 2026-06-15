@@ -12,8 +12,6 @@
         }
         h1 { color: #4b0082; font-size: 2.5rem; margin-bottom: 0.5rem; }
         p { color: #1a1a1a; font-size: 1.2rem; line-height: 1.6; }
-        #spiderman { display: none; margin-top: 20px; }
-        #spiderman img { width: 250px; border-radius: 10px; }
         button { 
             padding: 12px 30px; background-color: #4b0082; color: white; border: none; 
             border-radius: 25px; cursor: pointer; font-size: 1rem; margin-top: 20px;
@@ -27,16 +25,13 @@
     <div class="container">
         <h1>To my beautiful Wijden,</h1>
         <div class="hearts">💜🖤💜</div>
-        <p>Watching you pour your heart into your studies and finally reach the top of your class has been the most beautiful thing to witness. I am so incredibly proud of you, my babyband princess. You deserve every bit of this success, and I am just so lucky that I get to be the one standing by your side to celebrate you today.</p>
+        <p>Watching you pour your heart into your studies and reach the top of your class has been the most beautiful thing to witness. I am so incredibly proud of you, my princess. You deserve every bit of this success, and I am just so lucky that I get to be the one standing by your side to celebrate you today.</p>
         <button id="btn">Click for a surprise</button>
-            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJqZzV3bHlzZzV3bHlzZzV3bHlzZzV3bHlzZzV3bHlzZzV3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/RKH9u3Y8h3M0dZ9tN0/giphy.gif" alt="Spider-Man">
-        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script>
         document.getElementById('btn').addEventListener('click', () => {
             confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 }, colors: ['#4b0082', '#000000', '#d81b60'] });
-            document.getElementById('spiderman').style.display = 'block';
             document.getElementById('btn').style.display = 'none';
         });
     </script>
