@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #f4f4f9; font-family: sans-serif; }
+        .container { text-align: center; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        button { padding: 10px 20px; background-color: #ff4757; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Congratulations!</h1>
+        <p>You topped the class!</p>
+        <button id="btn">Click for a surprise</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script>
+        document.getElementById('btn').addEventListener('click', () => {
+            confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
+        });
+    </script>
+</body>
+</html>
